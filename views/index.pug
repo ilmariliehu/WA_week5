@@ -1,0 +1,21 @@
+doctype html
+head
+  title Tic Tac Toe
+  meta(charset='UTF-8')
+  style
+    include ../src/styles.css
+
+body
+  h1 Tic Tac Toe
+  p#info
+    | Player 1 you are playing with X
+    br
+    | Player 2 you are playing with O
+    br
+    br
+    | Player 1 you start
+  #board
+  p#c
+  button(type='submit' onclick='clearTBL(tbl)') Restart
+  script
+    include ../src/game.js
